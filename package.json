@@ -2,14 +2,22 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "api.js",
+  "main": "app.js",
+  "bin": {
+    "nodejs": "bin/www.js"
+  },
   "scripts": {
+    "start": "nodemon ./bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taehoonyun/Nodejs.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.3"
-  }
+  "bugs": {
+    "url": "https://github.com/taehoonyun/Nodejs/issues"
+  },
+  "homepage": "https://github.com/taehoonyun/Nodejs#readme"
 }
