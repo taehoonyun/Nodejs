@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 //router
 const home = require("./src/routes/home");
 
-//set App
+//App Setting
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
