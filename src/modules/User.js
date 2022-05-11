@@ -7,9 +7,9 @@ class User {
     this.body = body;
   }
 
-  login() {
+  async login() {
     const body = this.body;
-    const { id, psword } = UserStorage.getUsersInfo(body.id);
+    const { id, psword } = await UserStorage.getUsersInfo(body.id);
     if (id) {
       if (id === body.id && psword === body.psword) {
         return { success: true };
